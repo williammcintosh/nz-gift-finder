@@ -1,10 +1,11 @@
 (function () {
   function getPrefix() {
-    const path = window.location.pathname;
-    if (path.includes('/wool-products/') || path.includes('/products/')) {
-      return '../';
-    }
-    return '';
+    const depth = Math.max(
+      window.location.pathname.replace(/\/$/, '').split('/').filter(Boolean)
+        .length - 1,
+      0
+    );
+    return '../'.repeat(depth);
   }
 
   function loadShell() {
