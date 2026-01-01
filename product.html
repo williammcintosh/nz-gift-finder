@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{PAGE_TITLE}}</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1 class="page-title">{{PRODUCT_TITLE}}</h1>
+        <p class="intro">
+          We live here, so we don’t guess. We hand-collate NZ gifts that
+          actually land well for locals, visitors, and “ship it overseas”
+          situations. No junky souvenir spam.
+        </p>
+      </section>
+
+      <section class="product-grid">
+        <div class="gallery">{{IMAGE_HTML}}</div>
+
+        <div class="details">
+          <div class="kicker">Why this one works</div>
+          <p class="body">{{SHORT_BLURB}}</p>
+
+          <a class="cta" href="{{AMAZON_URL}}" target="_blank" rel="noopener">
+            View on Amazon
+          </a>
+
+          <p class="fineprint">
+            Affiliate link. Price may change. We pick stuff we’d actually give.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer" class="footer-mount"></div>
+    <script src="../app.js"></script>
+  </body>
+</html>
