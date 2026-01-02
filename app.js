@@ -30,6 +30,19 @@
     });
   }
 
+  function ensureFavicon() {
+    const prefix = getPrefix();
+    const existing = document.querySelector("link[rel~='icon']");
+    if (existing) {
+      existing.href = prefix + 'pounamu_twistfav.ico';
+      return;
+    }
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = prefix + 'pounamu_twistfav.ico';
+    document.head.appendChild(link);
+  }
+
   function initGallery() {
     const main = document.getElementById('mainProductImage');
     const thumbs = Array.from(document.querySelectorAll('.thumb'));
@@ -54,6 +67,7 @@
 
   window.addEventListener('DOMContentLoaded', () => {
     loadShell();
+    ensureFavicon();
     initGallery();
   });
 })();
