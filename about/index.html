@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>About NZ Gift Finder | NZ themed gifts on Amazon.com</title>
+
+    <meta
+      name="description"
+      content="NZ Gift Finder helps shoppers find New Zealand themed gifts using products available on Amazon.com. Built by an immigrant family living in NZ with an outside perspective on what Kiwis actually like."
+    />
+    <meta
+      name="keywords"
+      content="New Zealand gifts, NZ gifts, kiwiana gifts, gifts for New Zealanders, Amazon.com NZ gifts, NZ themed gifts, immigrant family NZ, gift guide"
+    />
+    <meta name="author" content="NZ Gift Finder" />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <style>
+      .about-narrow {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      .about-photo {
+        margin: 22px auto 0;
+      }
+      .about-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 16px;
+        object-fit: cover;
+      }
+      .about-sections {
+        margin-top: 26px;
+        max-width: 980px;
+      }
+      .about-sections .kicker {
+        margin-top: 22px;
+      }
+      .link-card {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        padding: 18px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        background: #fff;
+        text-decoration: none;
+        color: inherit;
+      }
+      .link-card:hover {
+        border-color: rgba(0, 0, 0, 0.16);
+      }
+      .link-card .thumb {
+        width: 150px;
+        flex: 0 0 150px;
+      }
+      .link-card .thumb img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+      }
+      .link-card .meta {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .link-card .title {
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin: 0;
+      }
+      .link-card .host {
+        opacity: 0.7;
+        margin: 0;
+      }
+      @media (max-width: 640px) {
+        .link-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .link-card .thumb {
+          width: 100%;
+          flex: 0 0 auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="site-header"></div>
+
+    <main class="wrap">
+      <section class="hero about-narrow">
+        <div class="breadcrumb"><a href="../index.html">Home</a> / About</div>
+
+        <h1 class="page-title">About NZ Gift Finder</h1>
+
+        <p class="intro">
+          NZ Gift Finder helps people find New Zealand style gifts using
+          products available on Amazon.com. We live in New Zealand, and we pick
+          stuff based on what actually lands well here, not random best sellers.
+        </p>
+
+        <div class="about-photo">
+          <img
+            src="../images/family_photo.png"
+            alt="Our family in New Zealand"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-sections">
+          <div class="kicker">Why this site exists</div>
+          <p class="body">
+            Kia ora! We are Will, Ira, and Vera. We are immigrants who have
+            lived in both New Zealand and the United States giving us a useful
+            outside perspective on the gap between what overseas shoppers think
+            New Zealanders like, and what actually makes a good gift here.
+          </p>
+
+          <p class="body">
+            Our goal is simple. Curate products from Amazon US that fit New
+            Zealand tastes, Kiwiana culture, and real everyday use. No junk. No
+            filler lists. Just gift ideas that make sense for Kiwi homes,
+            families, and lifestyles.
+          </p>
+
+          <div class="kicker">How we pick products</div>
+          <p class="body">
+            We independently select and write about items based on relevance,
+            quality, and suitability as gifts. We do not sell products directly.
+          </p>
+
+          <div class="kicker">Our story</div>
+          <p class="body">
+            Our family’s immigration story was featured by NZ Ahead. If you want
+            the backstory and how this project started, watch the interview
+            below.
+          </p>
+
+          <div class="kicker">NZ Ahead interview</div>
+
+          <a
+            class="link-card"
+            href="https://www.youtube.com/watch?v=fRhLyW_hMS4"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="thumb">
+              <img
+                src="https://i.ytimg.com/vi/fRhLyW_hMS4/hqdefault.jpg"
+                alt="NZ Ahead interview thumbnail"
+                loading="lazy"
+              />
+            </div>
+            <div class="meta">
+              <p class="title">
+                Big Setbacks in NEW ZEALAND: Can This American Family Make it
+                Work?
+              </p>
+              <p class="host">youtube.com</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer" class="footer-mount"></div>
+    <script src="../app.js"></script>
+  </body>
+</html>

@@ -2,32 +2,44 @@
   function getPrefix() {
     const depth = Math.max(
       window.location.pathname.replace(/\/$/, '').split('/').filter(Boolean)
-        .length - 1,
+        .length,
       0
     );
     return '../'.repeat(depth);
   }
 
-  function loadShell() {
-    const containers = [
-      { id: 'site-header', file: 'header.html' },
-      { id: 'site-footer', file: 'footer.html' },
-    ];
+  function loadHeader() {
+    const slot = document.getElementById('site-header');
+    if (!slot) return;
 
     const prefix = getPrefix();
 
-    containers.forEach(({ id, file }) => {
-      const slot = document.getElementById(id);
-      if (!slot) return;
-      fetch(prefix + file)
-        .then((res) => res.text())
-        .then((html) => {
-          slot.innerHTML = html.replace(/{{PREFIX}}/g, prefix);
-          const y = slot.querySelector('#y');
-          if (y) y.textContent = new Date().getFullYear();
-        })
-        .catch((err) => console.error('Include failed:', file, err));
-    });
+    fetch(prefix + 'header.html')
+      .then((res) => res.text())
+      .then((html) => {
+        slot.innerHTML = html.replace(/{{PREFIX}}/g, prefix);
+      })
+      .catch((err) => console.error('Include failed:', 'header.html', err));
+  }
+
+  function loadFooter() {
+    const slot = document.getElementById('site-footer');
+    if (!slot) return;
+    const prefix = getPrefix();
+
+    fetch(prefix + 'footer.html')
+      .then((res) => res.text())
+      .then((html) => {
+        slot.innerHTML = html;
+        const y = slot.querySelector('#y');
+        if (y) y.textContent = new Date().getFullYear();
+      })
+      .catch(() => {});
+  }
+
+  function loadShell() {
+    loadHeader();
+    loadFooter();
   }
 
   function ensureFavicon() {
