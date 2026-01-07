@@ -39,97 +39,46 @@ def slugify(text: str) -> str:
     return s or "product"
 
 
-def ai_copy(
-    title: str, category: str, nz_note: str, details: str
-) -> tuple[str, str, str, str, str]:
+def generate_full_html(template_html: str, fields: dict) -> str:
     if not client:
-        intro = f"{title} is a solid gift that’s easy to actually use. {nz_note}".strip()
-        meta_description = clean_single_line(intro)
-        meta_keywords = f"{title}, {category}, NZ gifts, New Zealand gifts"
-        card_sub = fallback_card_sub(intro)
-        return intro, details, meta_description, meta_keywords, card_sub
+        raise ValueError("Missing OPENAI_API_KEY.")
 
-    prompt = (
-        "You are writing for a New Zealand gift website.\n\n"
-        "Write FIVE sections:\n"
-        "1) A short intro paragraph.\n"
-        "2) A bullet list of product details.\n"
-        "3) A META_DESCRIPTION.\n"
-        "4) A KEYWORDS list.\n\n"
-        "5) A CARD_SUB line.\n\n"
-        "Rules for intro:\n"
-        "- 90 to 130 words\n"
-        "- Plain language\n"
-        "- Mention NZ vibe once\n"
-        "- Do not mention Amazon\n\n"
-        "Rules for META_DESCRIPTION:\n"
-        "- 140 to 160 characters\n"
-        "- First 90 characters must include the most relevant key phrases\n"
-        "- Match client search intent (what they'd type to find this product)\n\n"
-        "Rules for KEYWORDS:\n"
-        "- 6 to 10 comma-separated keywords\n"
-        "- Include the product type, style/theme, and New Zealand context\n\n"
-        "Rules for CARD_SUB:\n"
-        "- 50 characters max\n"
-        "- Describes the product in a quick, helpful way\n\n"
-        "Rules for details:\n"
-        "- 4 to 7 bullet points\n"
-        "- Practical info only\n"
-        "- No marketing fluff\n\n"
-        f"Product title: {title}\n"
-        f"Category: {category}\n"
-        f"NZ note: {nz_note}\n"
-        f"Raw product details:\n{details}\n\n"
-        "Return format:\n"
-        "INTRO:\n<paragraph>\n\n"
-        "DETAILS:\n- bullet\n- bullet\n"
-        "\n\nMETA_DESCRIPTION:\n<single line>\n\n"
-        "KEYWORDS:\nkeyword, keyword, keyword\n\n"
-        "CARD_SUB:\n<short line>\n"
+    fields_json = json.dumps(fields, ensure_ascii=True, indent=2)
+    user_content = (
+        "You will be given\n"
+        "1) TEMPLATE_HTML which you must preserve structurally\n"
+        "2) FIELDS_JSON with product info\n\n"
+        "Rules\n"
+        "- Keep all tags, ids, class names, imports, and layout identical to TEMPLATE_HTML\n"
+        "- Only edit the text content and attribute values that are product specific\n"
+        "- Update title tag, meta description, meta keywords if present, image alt text, "
+        "breadcrumb text, h1, intro, why section\n"
+        "- Use NZ vibe and common usage in NZ\n"
+        "- No repetitive phrasing\n"
+        "- No selling contrasts\n"
+        "- Output only the final HTML file, nothing else\n\n"
+        "TEMPLATE_HTML:\n"
+        f"<<<\n{template_html}\n>>>\n"
+        "FIELDS_JSON:\n"
+        f"<<<\n{fields_json}\n>>>\n"
     )
 
     resp = client.chat.completions.create(
         model=MODEL,
-        messages=[{"role": "user", "content": prompt}],
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are an expert copywriter and HTML editor for nzgiftfinder. "
+                    "Output must be valid HTML only."
+                ),
+            },
+            {"role": "user", "content": user_content},
+        ],
         temperature=0.7,
     )
 
-    text = resp.choices[0].message.content.strip()
-
-    def extract_section(label: str) -> str:
-        pattern = rf"{label}:\s*(.*?)(?=\n[A-Z_]+:\s*|$)"
-        match = re.search(pattern, text, flags=re.S)
-        return match.group(1).strip() if match else ""
-
-    intro = extract_section("INTRO")
-    if not intro and "DETAILS:" in text:
-        intro = text.split("DETAILS:")[0].replace("INTRO:", "").strip()
-    if not intro:
-        intro = text
-
-    bullets = extract_section("DETAILS")
-    meta_description = extract_section("META_DESCRIPTION")
-    meta_keywords = extract_section("KEYWORDS")
-    card_sub = extract_section("CARD_SUB")
-
-    meta_description = clean_single_line(meta_description) if meta_description else ""
-    if not meta_description:
-        meta_description = clean_single_line(intro) or clean_single_line(title)
-
-    if meta_keywords:
-        meta_keywords = ", ".join(
-            [kw.strip() for kw in meta_keywords.split(",") if kw.strip()]
-        )
-    if not meta_keywords:
-        meta_keywords = f"{title}, {category}, NZ gifts, New Zealand gifts"
-
-    if not card_sub:
-        card_sub = fallback_card_sub(intro)
-    else:
-        card_sub = clean_single_line(card_sub)
-        card_sub = truncate_line(card_sub, 50)
-
-    return intro, bullets, meta_description, meta_keywords, card_sub
+    return resp.choices[0].message.content.strip()
 
 
 def clean_single_line(text: str) -> str:
@@ -153,6 +102,31 @@ def first_sentence(text: str) -> str:
 def fallback_card_sub(intro: str) -> str:
     return truncate_line(first_sentence(intro), 50)
 
+
+def extract_meta_description(html: str) -> str:
+    match = re.search(
+        r'<meta\s+name="description"\s+content="([^"]*)"\s*/?>',
+        html,
+        flags=re.I,
+    )
+    return match.group(1).strip() if match else ""
+
+
+def validate_generated_html(html: str, amazon_link: str) -> None:
+    required_snippets = [
+        "<html",
+        "</html>",
+        '<link rel="stylesheet" href="../style.css"',
+        '<script src="../app.js">',
+        'id="mainProductImage"',
+    ]
+    missing = [snippet for snippet in required_snippets if snippet not in html]
+    if missing:
+        raise ValueError(f"Generated HTML missing required content: {missing}")
+    if amazon_link not in html:
+        raise ValueError("Generated HTML does not include the affiliate link.")
+    if "Swanndri" in html:
+        raise ValueError("Generated HTML still contains 'Swanndri' text.")
 
 def load_products_catalog(path: Path) -> list[dict]:
     if not path.exists():
@@ -234,9 +208,6 @@ def admin_form():
                 raise ValueError("Add at least 1 image URL.")
 
             details_raw = (request.form.get("details") or "").strip()
-            intro, details_clean, meta_description, meta_keywords, card_sub = ai_copy(
-                title, category, nz_note, details_raw
-            )
 
             slug = slugify(title)
             out_dir = OUTPUT_ROOT / category
@@ -249,24 +220,26 @@ def admin_form():
             if OUTPUT_ROOT not in out_path.parents:
                 raise PermissionError("Blocked path traversal attempt.")
 
-            html = render_template(
-                "product_page.html",
-                title=title,
-                category=category,
-                intro=intro,
-                why=nz_note,
-                details=details_clean,
-                amazon_link=amazon_link,
-                images=images,
-                image1=images[0],
-                meta_description=meta_description,
-                meta_keywords=meta_keywords,
+            template_html = (TEMPLATES_DIR / "product_page.html").read_text(
+                encoding="utf-8"
             )
-
-            if "Swanndri" in html:
-                raise ValueError("Generated HTML still contains 'Swanndri' text.")
+            fields = {
+                "title": title,
+                "category": category,
+                "amazon_link": amazon_link,
+                "nz_note": nz_note,
+                "details": details_raw,
+                "images": images,
+                "image1": images[0],
+                "image_alt": image_alt or title,
+                "slug": slug,
+            }
+            html = generate_full_html(template_html, fields)
+            validate_generated_html(html, amazon_link)
 
             alt_text = image_alt or title
+            meta_description = extract_meta_description(html)
+            card_sub = fallback_card_sub(meta_description or title)
             product_entry = {
                 "slug": slug,
                 "href": f"{slug}.html",
