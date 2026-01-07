@@ -2,7 +2,7 @@ cd "$(dirname "$0")"
 
 git add .
 
-git commit -m "Add new products"
+git commit -m "Ira added new products"
 
 git push
 
