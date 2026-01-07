@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "cosmetic-bag",
+    "href": "cosmetic-bag.html",
+    "image": "https://m.media-amazon.com/images/I/71CMsjMx2NL._AC_SL1500_.jpg",
+    "alt": "Marble New Zealand cosmetic bag",
+    "title": "New Zealand Cosmetic Bag",
+    "sub": "Clean, giftable, everyday useful"
+  },
+  {
+    "slug": "eco-super-citrus-cleanser",
+    "href": "eco-super-citrus-cleanser.html",
+    "image": "https://m.media-amazon.com/images/I/51azzCAqFKL._SL1500_.jpg",
+    "alt": "Eco super citrus cleanser bottle",
+    "title": "Eco Super Citrus Cleanser",
+    "sub": "Fresh, bright, NZ-made cleanser"
+  }
+]

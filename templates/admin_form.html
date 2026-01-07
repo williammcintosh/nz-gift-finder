@@ -1,0 +1,246 @@
+<!-- templates/admin_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NZGiftFinder Admin</title>
+
+    <!-- Use your site CSS so it feels consistent -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <style>
+      body {
+        background: #f6f6f6;
+      }
+      .admin-wrap {
+        max-width: 860px;
+        margin: 32px auto;
+        padding: 18px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 18px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        margin: 0 0 6px;
+      }
+      .hint {
+        font-size: 0.95rem;
+        opacity: 0.75;
+        margin: 6px 0 0;
+      }
+
+      label {
+        display: block;
+        font-weight: 800;
+        margin: 12px 0 6px;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        background: #fff;
+      }
+      textarea {
+        min-height: 90px;
+        resize: vertical;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .img-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .img-box {
+        background: #fafafa;
+        border: 1px dashed #ddd;
+        border-radius: 12px;
+        padding: 10px;
+        min-height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .img-box img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: none;
+      }
+
+      .notice {
+        padding: 12px;
+        border-radius: 12px;
+        margin: 12px 0;
+        border: 1px solid;
+        background: #fff;
+      }
+      .notice.ok {
+        border-color: #c8f2d4;
+        background: #f2fff6;
+      }
+      .notice.err {
+        border-color: #ffd0d0;
+        background: #fff3f3;
+      }
+
+      .btn {
+        margin-top: 14px;
+        width: 100%;
+        padding: 14px;
+        border-radius: 14px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+      .fine {
+        font-size: 0.9rem;
+        opacity: 0.75;
+        margin-top: 10px;
+      }
+      code {
+        background: #f2f2f2;
+        padding: 2px 6px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="admin-wrap">
+      <div class="card">
+        <h1>Add product</h1>
+        <p class="hint">Paste image URLs and you’ll see previews instantly.</p>
+
+        {% if message %}
+        <div class="notice {{ 'ok' if ok else 'err' }}">{{ message|safe }}</div>
+        {% endif %}
+
+        <form method="post" autocomplete="off">
+          <label>Product title</label>
+          <input
+            name="title"
+            placeholder="Swanndri Barn Shirt Orange"
+            required
+          />
+
+          <div class="row">
+            <div>
+              <label>Category</label>
+              <select name="category" required>
+                {% for c in categories %}
+                <option value="{{ c }}">{{ c }}</option>
+                {% endfor %}
+              </select>
+              <div class="hint">Uses your existing folder names.</div>
+            </div>
+
+            <div>
+              <label>Affiliate link</label>
+              <input
+                name="amazon_link"
+                placeholder="https://www.amazon.com/dp/...&tag=nzgiftfinder-20"
+                required
+              />
+            </div>
+          </div>
+
+          <label>Image URL 1</label>
+          <input
+            id="img1"
+            name="image1"
+            placeholder="https://m.media-amazon.com/images/I/....jpg"
+          />
+
+          <label>Image alt text (optional)</label>
+          <input
+            name="image_alt"
+            placeholder="Short descriptive alt text (defaults to title)"
+          />
+
+          <label>Image URL 2</label>
+          <input
+            id="img2"
+            name="image2"
+            placeholder="https://m.media-amazon.com/images/I/....jpg"
+          />
+
+          <label>Image URL 3</label>
+          <input
+            id="img3"
+            name="image3"
+            placeholder="https://m.media-amazon.com/images/I/....jpg"
+          />
+
+          <div class="img-grid" aria-label="Image previews">
+            <div class="img-box"><img id="p1" alt="Preview 1" /></div>
+            <div class="img-box"><img id="p2" alt="Preview 2" /></div>
+            <div class="img-box"><img id="p3" alt="Preview 3" /></div>
+          </div>
+
+          <label>Product details</label>
+          <textarea
+            name="details"
+            placeholder="Bullet ideas, sizing, materials, who it suits, what to watch for, shipping notes, etc."
+          ></textarea>
+
+          <label>Why this feels NZ</label>
+          <textarea
+            name="nz_note"
+            placeholder="One or two sentences. Who is it for? What’s the NZ vibe?"
+          ></textarea>
+
+          <button class="btn" type="submit">Create page</button>
+
+          <div class="fine">
+            Output goes to <code>/category/slug.html</code> in your repo.
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      function wirePreview(inputId, imgId) {
+        const input = document.getElementById(inputId);
+        const img = document.getElementById(imgId);
+
+        function update() {
+          const url = (input.value || '').trim();
+          if (!url) {
+            img.style.display = 'none';
+            img.removeAttribute('src');
+            return;
+          }
+          img.src = url;
+          img.style.display = 'block';
+        }
+
+        input.addEventListener('input', update);
+        img.addEventListener('error', () => {
+          img.style.display = 'none';
+        });
+
+        update();
+      }
+
+      wirePreview('img1', 'p1');
+      wirePreview('img2', 'p2');
+      wirePreview('img3', 'p3');
+    </script>
+  </body>
+</html>
