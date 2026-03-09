@@ -1,0 +1,16 @@
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET / HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET /images/main-page.png HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET /style.css HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET /images/artwork.png HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET /images/clothing.png HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET /images/jewelry.png HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET /images/skincare-cosmetics.png HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:49] "GET /app.js HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:50] "GET /header.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:50] "GET /footer.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:50] "GET /pounamu_twistfav.ico HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:50] "GET /images/pounamu_twist.png HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:55] "GET /artwork/ HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:55] "GET /artwork/cards.js HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:30:55] "GET /artwork/products.json HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [09/Mar/2026 19:31:13] "GET /artwork/auckland-skyline-sticker.html HTTP/1.1" 200 -
