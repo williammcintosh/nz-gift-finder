@@ -20,7 +20,7 @@ ROOT = Path.cwd()
 TEMPLATES_DIR = ROOT / "templates"
 OUTPUT_ROOT = ROOT
 
-ALLOWED_CATEGORIES = ["clothing", "jewelry", "skincare", "artwork"]
+ALLOWED_CATEGORIES = ["clothing", "jewelry", "skincare", "artwork", "food"]
 
 PORT = int(os.getenv("ADMIN_PORT", "5000"))
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
