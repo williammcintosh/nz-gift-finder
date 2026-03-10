@@ -14,13 +14,13 @@ from dotenv import load_dotenv
 from flask import Flask, request, render_template, send_from_directory
 from openai import OpenAI
 
+from product_pipeline import ALLOWED_CATEGORIES, import_product
+
 load_dotenv()
 
 ROOT = Path.cwd()
 TEMPLATES_DIR = ROOT / "templates"
 OUTPUT_ROOT = ROOT
-
-ALLOWED_CATEGORIES = ["clothing", "jewelry", "skincare", "artwork", "food"]
 
 PORT = int(os.getenv("ADMIN_PORT", "5000"))
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
@@ -187,73 +187,81 @@ def admin_form():
 
     if request.method == "POST":
         try:
-            title = (request.form.get("title") or "").strip()
-            category = (request.form.get("category") or "").strip().lower()
-            amazon_link = (request.form.get("amazon_link") or "").strip()
-            nz_note = (request.form.get("nz_note") or "").strip()
+            import_url = (request.form.get("import_url") or "").strip()
+            import_category = (request.form.get("import_category") or "").strip().lower()
 
-            image1 = (request.form.get("image1") or "").strip()
-            image2 = (request.form.get("image2") or "").strip()
-            image3 = (request.form.get("image3") or "").strip()
-            image_alt = (request.form.get("image_alt") or "").strip()
-            images = [u for u in [image1, image2, image3] if u]
+            if import_url:
+                result = import_product(import_url, category=import_category or None)
+                ok = True
+                message = f"Imported <code>{result['path']}</code>"
+            else:
+                title = (request.form.get("title") or "").strip()
+                category = (request.form.get("category") or "").strip().lower()
+                amazon_link = (request.form.get("amazon_link") or "").strip()
+                nz_note = (request.form.get("nz_note") or "").strip()
 
-            if not title:
-                raise ValueError("Missing product title.")
-            if category not in ALLOWED_CATEGORIES:
-                raise ValueError(f"Category must be one of: {', '.join(ALLOWED_CATEGORIES)}")
-            if not amazon_link:
-                raise ValueError("Missing affiliate link.")
-            if not images:
-                raise ValueError("Add at least 1 image URL.")
+                image1 = (request.form.get("image1") or "").strip()
+                image2 = (request.form.get("image2") or "").strip()
+                image3 = (request.form.get("image3") or "").strip()
+                image_alt = (request.form.get("image_alt") or "").strip()
+                images = [u for u in [image1, image2, image3] if u]
 
-            details_raw = (request.form.get("details") or "").strip()
+                if not title:
+                    raise ValueError("Missing product title.")
+                if category not in ALLOWED_CATEGORIES:
+                    raise ValueError(f"Category must be one of: {', '.join(ALLOWED_CATEGORIES)}")
+                if not amazon_link:
+                    raise ValueError("Missing affiliate link.")
+                if not images:
+                    raise ValueError("Add at least 1 image URL.")
 
-            slug = slugify(title)
-            out_dir = OUTPUT_ROOT / category
-            ensure_writable_dir(out_dir)
+                details_raw = (request.form.get("details") or "").strip()
 
-            out_path = (out_dir / f"{slug}.html").resolve()
-            catalog_path = out_dir / "products.json"
+                slug = slugify(title)
+                out_dir = OUTPUT_ROOT / category
+                ensure_writable_dir(out_dir)
 
-            # Block path trickery
-            if OUTPUT_ROOT not in out_path.parents:
-                raise PermissionError("Blocked path traversal attempt.")
+                out_path = (out_dir / f"{slug}.html").resolve()
+                catalog_path = out_dir / "products.json"
 
-            template_html = (TEMPLATES_DIR / "product_page.html").read_text(
-                encoding="utf-8"
-            )
-            fields = {
-                "title": title,
-                "category": category,
-                "amazon_link": amazon_link,
-                "nz_note": nz_note,
-                "details": details_raw,
-                "images": images,
-                "image1": images[0],
-                "image_alt": image_alt or title,
-                "slug": slug,
-            }
-            html = generate_full_html(template_html, fields)
-            validate_generated_html(html, amazon_link)
+                # Block path trickery
+                if OUTPUT_ROOT not in out_path.parents:
+                    raise PermissionError("Blocked path traversal attempt.")
 
-            alt_text = image_alt or title
-            meta_description = extract_meta_description(html)
-            card_sub = fallback_card_sub(meta_description or title)
-            product_entry = {
-                "slug": slug,
-                "href": f"{slug}.html",
-                "image": images[0],
-                "alt": alt_text,
-                "title": title,
-                "sub": card_sub,
-            }
+                template_html = (TEMPLATES_DIR / "product_page.html").read_text(
+                    encoding="utf-8"
+                )
+                fields = {
+                    "title": title,
+                    "category": category,
+                    "amazon_link": amazon_link,
+                    "nz_note": nz_note,
+                    "details": details_raw,
+                    "images": images,
+                    "image1": images[0],
+                    "image_alt": image_alt or title,
+                    "slug": slug,
+                }
+                html = generate_full_html(template_html, fields)
+                validate_generated_html(html, amazon_link)
 
-            out_path.write_text(html, encoding="utf-8")
-            upsert_product_catalog(catalog_path, product_entry)
+                alt_text = image_alt or title
+                meta_description = extract_meta_description(html)
+                card_sub = fallback_card_sub(meta_description or title)
+                product_entry = {
+                    "slug": slug,
+                    "href": f"{slug}.html",
+                    "image": images[0],
+                    "alt": alt_text,
+                    "title": title,
+                    "sub": card_sub,
+                }
 
-            ok = True
-            message = f"Created <code>{out_path.relative_to(OUTPUT_ROOT)}</code>"
+                out_path.write_text(html, encoding="utf-8")
+                upsert_product_catalog(catalog_path, product_entry)
+
+                ok = True
+                message = f"Created <code>{out_path.relative_to(OUTPUT_ROOT)}</code>"
 
         except Exception as e:
             ok = False

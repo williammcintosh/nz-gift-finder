@@ -125,13 +125,32 @@
     <main class="admin-wrap">
       <div class="card">
         <h1>Add product</h1>
-        <p class="hint">Paste image URLs and you’ll see previews instantly.</p>
+        <p class="hint">Paste an Amazon link to auto-import, or use the manual form below.</p>
 
         {% if message %}
         <div class="notice {{ 'ok' if ok else 'err' }}">{{ message|safe }}</div>
         {% endif %}
 
         <form method="post" autocomplete="off">
+          <label>Amazon link import</label>
+          <input
+            name="import_url"
+            placeholder="https://www.amazon.com/dp/..."
+          />
+          <label>Import category override (optional)</label>
+          <select name="import_category">
+            <option value="">Auto-detect category</option>
+            {% for c in categories %}
+            <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+          </select>
+
+          <div class="fine">
+            If you paste a link above, the importer will create the page and update the category automatically.
+          </div>
+
+          <hr style="margin: 18px 0; border: 0; border-top: 1px solid #eee" />
+
           <label>Product title</label>
           <input
             name="title"
