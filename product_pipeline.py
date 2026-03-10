@@ -76,6 +76,28 @@ def extract_title(raw_html: str) -> str:
 
 
 def extract_dynamic_images(raw_html: str) -> list[str]:
+    grouped: list[str] = []
+    seen_media_ids: set[str] = set()
+
+    start = raw_html.find("'colorImages':")
+    end = raw_html.find("'colorToAsin':", start) if start != -1 else -1
+    if start != -1 and end != -1:
+        block = raw_html[start:end]
+        object_pattern = re.compile(
+            r'"hiRes":"([^"]*)".*?"large":"([^"]*)".*?"physicalIdForMedia":"([^"]+)"',
+            re.S,
+        )
+        for hi_res, large, media_id in object_pattern.findall(block):
+            if media_id in seen_media_ids:
+                continue
+            seen_media_ids.add(media_id)
+            chosen = hi_res.strip() or large.strip()
+            if chosen:
+                grouped.append(chosen)
+
+    if grouped:
+        return grouped[:6]
+
     urls: list[str] = []
     match = re.search(r'data-a-dynamic-image="([^"]+)"', raw_html)
     if match:
