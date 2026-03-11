@@ -65,6 +65,9 @@ Examples of useful angles:
 - The main image and thumbnails should reflect the listing the page links to.
 - Update the category `products.json` card image to use the product's Amazon image too.
 - If the Amazon listing images cannot be captured reliably, stop and fix that first instead of publishing the page with a fake or generic image.
+- Do not use multiple size variants of the same Amazon image on one page.
+- Each thumbnail should be a genuinely different listing image with a different physical/media ID, not the same image resized.
+- When extracting from Amazon, deduplicate by the underlying image/media identity first, then choose one preferred size per unique image.
 
 ## Category rules
 
