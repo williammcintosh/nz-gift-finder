@@ -138,6 +138,7 @@ Books should go in the Books category, not Artwork.
    - Confirm the product is still available.
    - Confirm both CTA buttons point to the same URL.
    - Confirm the copy reads naturally.
+   - If the Amazon listing only exposes one genuinely unique image, use one image only rather than padding the gallery with duplicates or resized variants.
 
 10. **Commit after edits.**
    - Commit cleanly once the page and catalog are correct.
