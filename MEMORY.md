@@ -59,6 +59,13 @@ Examples of useful angles:
 - Never replace a page-specific affiliate link with some other Amazon link.
 - Preserve the supplied affiliate URL exactly unless there is a very deliberate normalization step that keeps the affiliate parameters intact.
 
+## Image rules
+
+- Use images from the actual Amazon product listing, not local category images, logos, or placeholders.
+- The main image and thumbnails should reflect the listing the page links to.
+- Update the category `products.json` card image to use the product's Amazon image too.
+- If the Amazon listing images cannot be captured reliably, stop and fix that first instead of publishing the page with a fake or generic image.
+
 ## Category rules
 
 Current categories include:
@@ -77,15 +84,61 @@ Books should go in the Books category, not Artwork.
 - Books should be framed as thoughtful, easy-to-post New Zealand gifts.
 - Good angles include wildlife, culture, nature, children’s reading, education, and meaningful keepsakes.
 
-## Page creation preferences
+## Step-by-step workflow for creating a new product page
 
-When creating a new product page:
+1. **Confirm the product is actually on Amazon US.**
+   - Use a direct Amazon.com link, not another locale.
+   - Make sure the product is clearly New Zealand-related and fits the site.
 
-- Match the existing NZ Gift Finder style.
-- Use category-appropriate search language.
-- Write copy that feels curated, not mass-generated.
-- Keep structure consistent with the site.
-- Make small improvements where obvious, but avoid large unnecessary rewrites unless asked.
+2. **Check availability before doing any page work.**
+   - Confirm the listing is purchasable or at least not marked "Currently unavailable."
+   - If it is unavailable, do not publish the page unless explicitly told to keep a placeholder watch page.
+   - If it is unavailable but still worth tracking, note it in memory as a watch candidate.
+
+3. **Capture the real Amazon listing assets.**
+   - Pull the product title from the listing.
+   - Pull the Amazon product images from the listing.
+   - Pull a few useful product details / bullets.
+   - Do not substitute local placeholder images.
+
+4. **Choose the correct category.**
+   - food, books, skincare, jewelry, clothing, or artwork.
+   - If in doubt, choose the category that best matches how a human would shop for it on this site.
+
+5. **Write the page in the NZ Gift Finder voice.**
+   - Keep the tone curated, natural, and Kiwi-aware.
+   - Make it sound like a real recommendation, not an SEO content farm.
+   - Use natural search-intent phrasing without stuffing.
+
+6. **Follow the standard product-page structure.**
+   - Title
+   - Intro
+   - Product details bullets
+   - Why this one works
+   - Amazon button
+   - Long story/search-intent section
+   - Same Amazon button again
+   - Affiliate disclaimer
+
+7. **Keep the Amazon URL exact.**
+   - Reuse the same product-specific affiliate URL for both CTA buttons.
+   - Do not silently swap in another Amazon link.
+
+8. **Update the category catalog.**
+   - Add the product to the relevant category `products.json`.
+   - Use the real Amazon product image in the card entry.
+   - Write a short, human subline that fits the site.
+
+9. **Sanity-check the finished page.**
+   - Confirm the breadcrumb/category is correct.
+   - Confirm the images are the Amazon listing images.
+   - Confirm the product is still available.
+   - Confirm both CTA buttons point to the same URL.
+   - Confirm the copy reads naturally.
+
+10. **Commit after edits.**
+   - Commit cleanly once the page and catalog are correct.
+   - Push when the user asks, or when the request explicitly includes pushing.
 
 ## Editing preferences
 
@@ -102,7 +155,7 @@ When creating a new product page:
 
 - Commit changes after edits.
 - Push when the user asks, or when the request explicitly includes pushing.
-- For new imports, the intended workflow is: user sends Amazon link, page gets created, category catalog updated, then commit/push.
+- For new imports, the intended workflow is: user sends Amazon link, availability is checked, listing images/details are captured, page gets created, category catalog updated, then commit/push.
 
 ## Current watch list
 
