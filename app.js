@@ -30,7 +30,7 @@
     fetch(prefix + 'footer.html')
       .then((res) => res.text())
       .then((html) => {
-        slot.innerHTML = html;
+        slot.innerHTML = html.replace(/{{PREFIX}}/g, prefix);
         const y = slot.querySelector('#y');
         if (y) y.textContent = new Date().getFullYear();
       })
