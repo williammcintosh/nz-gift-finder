@@ -103,3 +103,7 @@ When creating a new product page:
 - Commit changes after edits.
 - Push when the user asks, or when the request explicitly includes pushing.
 - For new imports, the intended workflow is: user sends Amazon link, page gets created, category catalog updated, then commit/push.
+
+## Current watch list
+
+- Kiva Certified UMF 15+ Raw Manuka Honey with Gift Box (`https://www.amazon.com/Kiva-Certified-Manuka-Honey-GIFT/dp/B07HYFLM7W`) was marked "Currently unavailable" when reviewed on 2026-03-12 NZ time. If it comes back, it is a good candidate for a future NZ Gift Finder food page.
