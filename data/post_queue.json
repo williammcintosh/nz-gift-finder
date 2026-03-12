@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-12T07:11:31.107375+00:00",
+  "schema_version": 1,
+  "cycle": {
+    "order": [
+      "product",
+      "opinion",
+      "product",
+      "roundup"
+    ],
+    "current_index": 0
+  },
+  "items": []
+}

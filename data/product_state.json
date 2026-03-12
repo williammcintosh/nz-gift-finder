@@ -1,0 +1,1351 @@
+{
+  "generated_at": "2026-03-12T07:11:31.107373+00:00",
+  "source": "scripts/bootstrap_state.py",
+  "schema_version": 1,
+  "inventory": [
+    {
+      "id": "artwork/kerer-wood-pigeon-metal-sign12x16",
+      "slug": "kerer-wood-pigeon-metal-sign12x16",
+      "title": "Kererū Wood Pigeon Metal Sign12x16\"",
+      "category": "artwork",
+      "amazon_url": "https://amzn.to/40ntaOf",
+      "site_url": "/artwork/kerer-wood-pigeon-metal-sign12x16.html",
+      "page_path": "artwork/kerer-wood-pigeon-metal-sign12x16.html",
+      "catalog_path": "artwork/products.json",
+      "image": "https://m.media-amazon.com/images/I/41h2r8waXsL._AC_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "artwork/kerer-wood-pigeon-metal-sign12x16",
+        "amazon_url": "https://amzn.to/40ntaOf",
+        "site_url": "/artwork/kerer-wood-pigeon-metal-sign12x16.html",
+        "slug": "kerer-wood-pigeon-metal-sign12x16"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107181+00:00",
+        "updated_at": "2026-03-12T07:11:31.107194+00:00"
+      }
+    },
+    {
+      "id": "artwork/kerer-whispers-notebook",
+      "slug": "kerer-whispers-notebook",
+      "title": "Kererū Whispers Notebook",
+      "category": "artwork",
+      "amazon_url": "https://amzn.to/4d5BVnC",
+      "site_url": "/artwork/kerer-whispers-notebook.html",
+      "page_path": "artwork/kerer-whispers-notebook.html",
+      "catalog_path": "artwork/products.json",
+      "image": "https://m.media-amazon.com/images/I/71vmjZqpFIL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "artwork/kerer-whispers-notebook",
+        "amazon_url": "https://amzn.to/4d5BVnC",
+        "site_url": "/artwork/kerer-whispers-notebook.html",
+        "slug": "kerer-whispers-notebook"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107202+00:00",
+        "updated_at": "2026-03-12T07:11:31.107204+00:00"
+      }
+    },
+    {
+      "id": "artwork/auckland-skyline-sticker",
+      "slug": "auckland-skyline-sticker",
+      "title": "Auckland Skyline Sticker",
+      "category": "artwork",
+      "amazon_url": "https://amzn.to/4rv4lLy",
+      "site_url": "/artwork/auckland-skyline-sticker.html",
+      "page_path": "artwork/auckland-skyline-sticker.html",
+      "catalog_path": "artwork/products.json",
+      "image": "https://m.media-amazon.com/images/I/51pLyRns26L._AC_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "artwork/auckland-skyline-sticker",
+        "amazon_url": "https://amzn.to/4rv4lLy",
+        "site_url": "/artwork/auckland-skyline-sticker.html",
+        "slug": "auckland-skyline-sticker"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107208+00:00",
+        "updated_at": "2026-03-12T07:11:31.107209+00:00"
+      }
+    },
+    {
+      "id": "artwork/auckland-city-road-view",
+      "slug": "auckland-city-road-view",
+      "title": "Auckland City Road View",
+      "category": "artwork",
+      "amazon_url": "https://amzn.to/4jNOYeZ",
+      "site_url": "/artwork/auckland-city-road-view.html",
+      "page_path": "artwork/auckland-city-road-view.html",
+      "catalog_path": "artwork/products.json",
+      "image": "https://m.media-amazon.com/images/I/71ycrnO3dzL._AC_SX679_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "artwork/auckland-city-road-view",
+        "amazon_url": "https://amzn.to/4jNOYeZ",
+        "site_url": "/artwork/auckland-city-road-view.html",
+        "slug": "auckland-city-road-view"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107213+00:00",
+        "updated_at": "2026-03-12T07:11:31.107214+00:00"
+      }
+    },
+    {
+      "id": "artwork/auckland-skyline",
+      "slug": "auckland-skyline",
+      "title": "Auckland Skyline Line Art Print",
+      "category": "artwork",
+      "amazon_url": "https://amzn.to/4aTpVER",
+      "site_url": "/artwork/auckland-skyline.html",
+      "page_path": "artwork/auckland-skyline.html",
+      "catalog_path": "artwork/products.json",
+      "image": "https://m.media-amazon.com/images/I/51mm-DqcmYL._AC_SL1000_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "artwork/auckland-skyline",
+        "amazon_url": "https://amzn.to/4aTpVER",
+        "site_url": "/artwork/auckland-skyline.html",
+        "slug": "auckland-skyline"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107222+00:00",
+        "updated_at": "2026-03-12T07:11:31.107223+00:00"
+      }
+    },
+    {
+      "id": "artwork/nz-auckland-sticker",
+      "slug": "nz-auckland-sticker",
+      "title": "Auckland City Sticker",
+      "category": "artwork",
+      "amazon_url": "https://amzn.to/49p3Awt",
+      "site_url": "/artwork/nz-auckland-sticker.html",
+      "page_path": "artwork/nz-auckland-sticker.html",
+      "catalog_path": "artwork/products.json",
+      "image": "https://m.media-amazon.com/images/I/61HTkcg7VBL._AC_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "artwork/nz-auckland-sticker",
+        "amazon_url": "https://amzn.to/49p3Awt",
+        "site_url": "/artwork/nz-auckland-sticker.html",
+        "slug": "nz-auckland-sticker"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107226+00:00",
+        "updated_at": "2026-03-12T07:11:31.107228+00:00"
+      }
+    },
+    {
+      "id": "books/great-new-zealand-baking-book",
+      "slug": "great-new-zealand-baking-book",
+      "title": "Great New Zealand Baking Book",
+      "category": "books",
+      "amazon_url": "https://www.amazon.com/Great-New-Zealand-Baking-Book/dp/0473339633?&linkCode=ll2&tag=nzgiftfinder-20&linkId=db6c7c40e69b87dea07b81c31ca748e3&language=en_US&ref_=as_li_ss_tl",
+      "site_url": "/books/great-new-zealand-baking-book.html",
+      "page_path": "books/great-new-zealand-baking-book.html",
+      "catalog_path": "books/products.json",
+      "image": "https://m.media-amazon.com/images/I/51QN+XTa4sL._AC_SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "books/great-new-zealand-baking-book",
+        "amazon_url": "https://www.amazon.com/Great-New-Zealand-Baking-Book/dp/0473339633?&linkCode=ll2&tag=nzgiftfinder-20&linkId=db6c7c40e69b87dea07b81c31ca748e3&language=en_US&ref_=as_li_ss_tl",
+        "site_url": "/books/great-new-zealand-baking-book.html",
+        "slug": "great-new-zealand-baking-book"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107234+00:00",
+        "updated_at": "2026-03-12T07:11:31.107235+00:00"
+      }
+    },
+    {
+      "id": "books/eat-up-new-zealand-recipes-and-stories",
+      "slug": "eat-up-new-zealand-recipes-and-stories",
+      "title": "Eat Up New Zealand: Recipes and Stories",
+      "category": "books",
+      "amazon_url": "https://www.amazon.com/Eat-Up-New-Zealand-Recipes/dp/1877505773?&linkCode=ll2&tag=nzgiftfinder-20&linkId=453d5b48adb14ccac777e3348a7645eb&language=en_US&ref_=as_li_ss_tl",
+      "site_url": "/books/eat-up-new-zealand-recipes-and-stories.html",
+      "page_path": "books/eat-up-new-zealand-recipes-and-stories.html",
+      "catalog_path": "books/products.json",
+      "image": "https://m.media-amazon.com/images/I/61Pdt3SZ+0L._AC_SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "books/eat-up-new-zealand-recipes-and-stories",
+        "amazon_url": "https://www.amazon.com/Eat-Up-New-Zealand-Recipes/dp/1877505773?&linkCode=ll2&tag=nzgiftfinder-20&linkId=453d5b48adb14ccac777e3348a7645eb&language=en_US&ref_=as_li_ss_tl",
+        "site_url": "/books/eat-up-new-zealand-recipes-and-stories.html",
+        "slug": "eat-up-new-zealand-recipes-and-stories"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107238+00:00",
+        "updated_at": "2026-03-12T07:11:31.107240+00:00"
+      }
+    },
+    {
+      "id": "books/the-great-new-zealand-cookbook-the-food-we-love-from-80-of-our-finest-cooks-chefs-and-bakers",
+      "slug": "the-great-new-zealand-cookbook-the-food-we-love-from-80-of-our-finest-cooks-chefs-and-bakers",
+      "title": "The Great New Zealand Cookbook",
+      "category": "books",
+      "amazon_url": "https://www.amazon.com/Great-New-Zealand-Cookbook-Cookbooks/dp/0473277409?&linkCode=ll2&tag=nzgiftfinder-20&linkId=13c83016cd24ae990269b052e658691a&language=en_US&ref_=as_li_ss_tl",
+      "site_url": "/books/the-great-new-zealand-cookbook-the-food-we-love-from-80-of-our-finest-cooks-chefs-and-bakers.html",
+      "page_path": "books/the-great-new-zealand-cookbook-the-food-we-love-from-80-of-our-finest-cooks-chefs-and-bakers.html",
+      "catalog_path": "books/products.json",
+      "image": "https://m.media-amazon.com/images/I/71f5MRth7SL._SL1000_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "books/the-great-new-zealand-cookbook-the-food-we-love-from-80-of-our-finest-cooks-chefs-and-bakers",
+        "amazon_url": "https://www.amazon.com/Great-New-Zealand-Cookbook-Cookbooks/dp/0473277409?&linkCode=ll2&tag=nzgiftfinder-20&linkId=13c83016cd24ae990269b052e658691a&language=en_US&ref_=as_li_ss_tl",
+        "site_url": "/books/the-great-new-zealand-cookbook-the-food-we-love-from-80-of-our-finest-cooks-chefs-and-bakers.html",
+        "slug": "the-great-new-zealand-cookbook-the-food-we-love-from-80-of-our-finest-cooks-chefs-and-bakers"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107243+00:00",
+        "updated_at": "2026-03-12T07:11:31.107244+00:00"
+      }
+    },
+    {
+      "id": "books/pita-the-piwakawakas-busy-day-storybook",
+      "slug": "pita-the-piwakawakas-busy-day-storybook",
+      "title": "Pita the Piwakawakas Busy Day Storybook",
+      "category": "books",
+      "amazon_url": "",
+      "site_url": "/books/pita-the-piwakawakas-busy-day-storybook.html",
+      "page_path": "books/pita-the-piwakawakas-busy-day-storybook.html",
+      "catalog_path": "books/products.json",
+      "image": "https://m.media-amazon.com/images/I/61RD+MMNX2L._SY425_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "books/pita-the-piwakawakas-busy-day-storybook",
+        "amazon_url": "",
+        "site_url": "/books/pita-the-piwakawakas-busy-day-storybook.html",
+        "slug": "pita-the-piwakawakas-busy-day-storybook"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107250+00:00",
+        "updated_at": "2026-03-12T07:11:31.107251+00:00"
+      }
+    },
+    {
+      "id": "books/kea-bird-of-paradox-the-evolution-and-behavior-of-a-new-zealand-parrot",
+      "slug": "kea-bird-of-paradox-the-evolution-and-behavior-of-a-new-zealand-parrot",
+      "title": "Kea, Bird of Paradox: The Evolution and Behavior of a New Zealand Parrot",
+      "category": "books",
+      "amazon_url": "https://www.amazon.com/Kea-Bird-Paradox-Evolution-Behavior/dp/0520213394?tag=nzgiftfinder-20&amp;linkCode=ll2&amp;linkId=29d8944dbfd0876bf8bd0e05c980e115&amp;language=en_US&amp;ref_=as_li_ss_tl",
+      "site_url": "/books/kea-bird-of-paradox-the-evolution-and-behavior-of-a-new-zealand-parrot.html",
+      "page_path": "books/kea-bird-of-paradox-the-evolution-and-behavior-of-a-new-zealand-parrot.html",
+      "catalog_path": "books/products.json",
+      "image": "https://m.media-amazon.com/images/I/91QCJShaYXL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "books/kea-bird-of-paradox-the-evolution-and-behavior-of-a-new-zealand-parrot",
+        "amazon_url": "https://www.amazon.com/Kea-Bird-Paradox-Evolution-Behavior/dp/0520213394?tag=nzgiftfinder-20&amp;linkCode=ll2&amp;linkId=29d8944dbfd0876bf8bd0e05c980e115&amp;language=en_US&amp;ref_=as_li_ss_tl",
+        "site_url": "/books/kea-bird-of-paradox-the-evolution-and-behavior-of-a-new-zealand-parrot.html",
+        "slug": "kea-bird-of-paradox-the-evolution-and-behavior-of-a-new-zealand-parrot"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107255+00:00",
+        "updated_at": "2026-03-12T07:11:31.107256+00:00"
+      }
+    },
+    {
+      "id": "clothing/00-merino-wool-beanie",
+      "slug": "00-merino-wool-beanie",
+      "title": "100% Merino Wool Beanie",
+      "category": "clothing",
+      "amazon_url": "https://amzn.to/4bdyHfj",
+      "site_url": "/clothing/00-merino-wool-beanie.html",
+      "page_path": "clothing/00-merino-wool-beanie.html",
+      "catalog_path": "clothing/products.json",
+      "image": "https://m.media-amazon.com/images/I/91HdotECpGL._AC_SX679_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "clothing/00-merino-wool-beanie",
+        "amazon_url": "https://amzn.to/4bdyHfj",
+        "site_url": "/clothing/00-merino-wool-beanie.html",
+        "slug": "00-merino-wool-beanie"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107259+00:00",
+        "updated_at": "2026-03-12T07:11:31.107268+00:00"
+      }
+    },
+    {
+      "id": "clothing/merino-possum-fingerless-gloves",
+      "slug": "merino-possum-fingerless-gloves",
+      "title": "Merino Possum Fingerless Gloves",
+      "category": "clothing",
+      "amazon_url": "https://amzn.to/4bbK1IL",
+      "site_url": "/clothing/merino-possum-fingerless-gloves.html",
+      "page_path": "clothing/merino-possum-fingerless-gloves.html",
+      "catalog_path": "clothing/products.json",
+      "image": "https://m.media-amazon.com/images/I/81YgFWK7ucL._AC_SY879_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "clothing/merino-possum-fingerless-gloves",
+        "amazon_url": "https://amzn.to/4bbK1IL",
+        "site_url": "/clothing/merino-possum-fingerless-gloves.html",
+        "slug": "merino-possum-fingerless-gloves"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107271+00:00",
+        "updated_at": "2026-03-12T07:11:31.107272+00:00"
+      }
+    },
+    {
+      "id": "clothing/swanndri-barn-shirt",
+      "slug": "swanndri-barn-shirt",
+      "title": "Swanndri Barn Shirt",
+      "category": "clothing",
+      "amazon_url": "https://amzn.to/4aNSqDO",
+      "site_url": "/clothing/swanndri-barn-shirt.html",
+      "page_path": "clothing/swanndri-barn-shirt.html",
+      "catalog_path": "clothing/products.json",
+      "image": "https://m.media-amazon.com/images/I/61IWqZjLj0L._AC_SL1200_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "clothing/swanndri-barn-shirt",
+        "amazon_url": "https://amzn.to/4aNSqDO",
+        "site_url": "/clothing/swanndri-barn-shirt.html",
+        "slug": "swanndri-barn-shirt"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107278+00:00",
+        "updated_at": "2026-03-12T07:11:31.107280+00:00"
+      }
+    },
+    {
+      "id": "food/new-zealand-honey-co-raw-manuka-honey-umf-15-mgo-514-8-8oz",
+      "slug": "new-zealand-honey-co-raw-manuka-honey-umf-15-mgo-514-8-8oz",
+      "title": "New Zealand Honey Co. Raw Mānuka Honey UMF 15+ / MGO 514+",
+      "category": "food",
+      "amazon_url": "https://amzn.to/4rZWkPD",
+      "site_url": "/food/new-zealand-honey-co-raw-manuka-honey-umf-15-mgo-514-8-8oz.html",
+      "page_path": "food/new-zealand-honey-co-raw-manuka-honey-umf-15-mgo-514-8-8oz.html",
+      "catalog_path": "food/products.json",
+      "image": "https://m.media-amazon.com/images/I/716giOPvVjL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "food/new-zealand-honey-co-raw-manuka-honey-umf-15-mgo-514-8-8oz",
+        "amazon_url": "https://amzn.to/4rZWkPD",
+        "site_url": "/food/new-zealand-honey-co-raw-manuka-honey-umf-15-mgo-514-8-8oz.html",
+        "slug": "new-zealand-honey-co-raw-manuka-honey-umf-15-mgo-514-8-8oz"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107286+00:00",
+        "updated_at": "2026-03-12T07:11:31.107287+00:00"
+      }
+    },
+    {
+      "id": "food/manuka-health-umf-13-mgo-400-manuka-honey-250g-8-8oz",
+      "slug": "manuka-health-umf-13-mgo-400-manuka-honey-250g-8-8oz",
+      "title": "Manuka Health UMF 13+ / MGO 400+ Mānuka Honey (250g)",
+      "category": "food",
+      "amazon_url": "https://amzn.to/4llvkHK",
+      "site_url": "/food/manuka-health-umf-13-mgo-400-manuka-honey-250g-8-8oz.html",
+      "page_path": "food/manuka-health-umf-13-mgo-400-manuka-honey-250g-8-8oz.html",
+      "catalog_path": "food/products.json",
+      "image": "https://m.media-amazon.com/images/I/61rMDpbr6KL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "food/manuka-health-umf-13-mgo-400-manuka-honey-250g-8-8oz",
+        "amazon_url": "https://amzn.to/4llvkHK",
+        "site_url": "/food/manuka-health-umf-13-mgo-400-manuka-honey-250g-8-8oz.html",
+        "slug": "manuka-health-umf-13-mgo-400-manuka-honey-250g-8-8oz"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107290+00:00",
+        "updated_at": "2026-03-12T07:11:31.107291+00:00"
+      }
+    },
+    {
+      "id": "food/manuka-hunters-raw-new-zealand-honey-gift-set-4-pack",
+      "slug": "manuka-hunters-raw-new-zealand-honey-gift-set-4-pack",
+      "title": "Manuka Hunters Raw New Zealand Honey Gift Set (4-Pack)",
+      "category": "food",
+      "amazon_url": "https://amzn.to/40ngxmr",
+      "site_url": "/food/manuka-hunters-raw-new-zealand-honey-gift-set-4-pack.html",
+      "page_path": "food/manuka-hunters-raw-new-zealand-honey-gift-set-4-pack.html",
+      "catalog_path": "food/products.json",
+      "image": "https://m.media-amazon.com/images/I/6150kGUFHCL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "food/manuka-hunters-raw-new-zealand-honey-gift-set-4-pack",
+        "amazon_url": "https://amzn.to/40ngxmr",
+        "site_url": "/food/manuka-hunters-raw-new-zealand-honey-gift-set-4-pack.html",
+        "slug": "manuka-hunters-raw-new-zealand-honey-gift-set-4-pack"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107294+00:00",
+        "updated_at": "2026-03-12T07:11:31.107295+00:00"
+      }
+    },
+    {
+      "id": "food/manuka-health-holiday-gift-set-certified-raw-manuka-honey-from-new-zealand",
+      "slug": "manuka-health-holiday-gift-set-certified-raw-manuka-honey-from-new-zealand",
+      "title": "Manuka Health Holiday Gift Set (Certified Raw Mānuka Honey)",
+      "category": "food",
+      "amazon_url": "https://amzn.to/4uwiFWP",
+      "site_url": "/food/manuka-health-holiday-gift-set-certified-raw-manuka-honey-from-new-zealand.html",
+      "page_path": "food/manuka-health-holiday-gift-set-certified-raw-manuka-honey-from-new-zealand.html",
+      "catalog_path": "food/products.json",
+      "image": "https://m.media-amazon.com/images/I/81H5pahz+oL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "food/manuka-health-holiday-gift-set-certified-raw-manuka-honey-from-new-zealand",
+        "amazon_url": "https://amzn.to/4uwiFWP",
+        "site_url": "/food/manuka-health-holiday-gift-set-certified-raw-manuka-honey-from-new-zealand.html",
+        "slug": "manuka-health-holiday-gift-set-certified-raw-manuka-honey-from-new-zealand"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107301+00:00",
+        "updated_at": "2026-03-12T07:11:31.107302+00:00"
+      }
+    },
+    {
+      "id": "food/whittakers-wellington-coffee-chocolate-bar-100g-pack-of-6",
+      "slug": "whittakers-wellington-coffee-chocolate-bar-100g-pack-of-6",
+      "title": "Whittaker's Wellington Coffee Chocolate 100g (Pack of 6)",
+      "category": "food",
+      "amazon_url": "https://amzn.to/3P8LqZc",
+      "site_url": "/food/whittakers-wellington-coffee-chocolate-bar-100g-pack-of-6.html",
+      "page_path": "food/whittakers-wellington-coffee-chocolate-bar-100g-pack-of-6.html",
+      "catalog_path": "food/products.json",
+      "image": "https://m.media-amazon.com/images/I/71KGUvHinIS._SL1000_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "food/whittakers-wellington-coffee-chocolate-bar-100g-pack-of-6",
+        "amazon_url": "https://amzn.to/3P8LqZc",
+        "site_url": "/food/whittakers-wellington-coffee-chocolate-bar-100g-pack-of-6.html",
+        "slug": "whittakers-wellington-coffee-chocolate-bar-100g-pack-of-6"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107305+00:00",
+        "updated_at": "2026-03-12T07:11:31.107307+00:00"
+      }
+    },
+    {
+      "id": "home/cozy-wool-blanket-100-virgin-wool-from-new-zealand",
+      "slug": "cozy-wool-blanket-100-virgin-wool-from-new-zealand",
+      "title": "Cozy Wool Blanket | 100% Virgin Wool from New Zealand",
+      "category": "home",
+      "amazon_url": "https://www.amazon.com/Cozy-Blankets-Blanket-Zealand-Perfect/dp/B0B6K2L3XQ?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=5b05e09a0b2e48ca638026ddb2acfe58&language=en_US&ref_=as_li_ss_tl",
+      "site_url": "/home/cozy-wool-blanket-100-virgin-wool-from-new-zealand.html",
+      "page_path": "home/cozy-wool-blanket-100-virgin-wool-from-new-zealand.html",
+      "catalog_path": "home/products.json",
+      "image": "https://m.media-amazon.com/images/I/81aLYW7IN+L._AC_SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "home/cozy-wool-blanket-100-virgin-wool-from-new-zealand",
+        "amazon_url": "https://www.amazon.com/Cozy-Blankets-Blanket-Zealand-Perfect/dp/B0B6K2L3XQ?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=5b05e09a0b2e48ca638026ddb2acfe58&language=en_US&ref_=as_li_ss_tl",
+        "site_url": "/home/cozy-wool-blanket-100-virgin-wool-from-new-zealand.html",
+        "slug": "cozy-wool-blanket-100-virgin-wool-from-new-zealand"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107313+00:00",
+        "updated_at": "2026-03-12T07:11:31.107314+00:00"
+      }
+    },
+    {
+      "id": "home/new-zealand-virgin-wool-throw-blanket-indoor-outdoor",
+      "slug": "new-zealand-virgin-wool-throw-blanket-indoor-outdoor",
+      "title": "New Zealand Virgin Wool Throw Blanket (Indoor & Outdoor)",
+      "category": "home",
+      "amazon_url": "https://www.amazon.com/Cozy-Blankets-Zealand-Blanket-Outdoor/dp/B0D47D5D4F?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=ccce779bfb233e105ef22376ce6b792e&language=en_US&ref_=as_li_ss_tl",
+      "site_url": "/home/new-zealand-virgin-wool-throw-blanket-indoor-outdoor.html",
+      "page_path": "home/new-zealand-virgin-wool-throw-blanket-indoor-outdoor.html",
+      "catalog_path": "home/products.json",
+      "image": "https://m.media-amazon.com/images/I/81D1OhXx8zL._AC_UF894,1000_QL80_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "home/new-zealand-virgin-wool-throw-blanket-indoor-outdoor",
+        "amazon_url": "https://www.amazon.com/Cozy-Blankets-Zealand-Blanket-Outdoor/dp/B0D47D5D4F?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=ccce779bfb233e105ef22376ce6b792e&language=en_US&ref_=as_li_ss_tl",
+        "site_url": "/home/new-zealand-virgin-wool-throw-blanket-indoor-outdoor.html",
+        "slug": "new-zealand-virgin-wool-throw-blanket-indoor-outdoor"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107317+00:00",
+        "updated_at": "2026-03-12T07:11:31.107318+00:00"
+      }
+    },
+    {
+      "id": "jewelry/nosiny-12-pcs-new-zealand-keychain-souvenir-gifts",
+      "slug": "nosiny-12-pcs-new-zealand-keychain-souvenir-gifts",
+      "title": "Nosiny 12 Pcs New Zealand Keychain Souvenir Gifts",
+      "category": "jewelry",
+      "amazon_url": "https://www.amazon.com/Nosiny-Zealand-Keychain-Souvenir-Suitcase/dp/B0FZC1XHNN?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=944a86820fb3bfc3cb7bcecbb12e2bf1&language=en_US&ref_=as_li_ss_tl",
+      "site_url": "/jewelry/nosiny-12-pcs-new-zealand-keychain-souvenir-gifts.html",
+      "page_path": "jewelry/nosiny-12-pcs-new-zealand-keychain-souvenir-gifts.html",
+      "catalog_path": "jewelry/products.json",
+      "image": "https://m.media-amazon.com/images/I/71INwnJPUSL._AC_SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "jewelry/nosiny-12-pcs-new-zealand-keychain-souvenir-gifts",
+        "amazon_url": "https://www.amazon.com/Nosiny-Zealand-Keychain-Souvenir-Suitcase/dp/B0FZC1XHNN?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=944a86820fb3bfc3cb7bcecbb12e2bf1&language=en_US&ref_=as_li_ss_tl",
+        "site_url": "/jewelry/nosiny-12-pcs-new-zealand-keychain-souvenir-gifts.html",
+        "slug": "nosiny-12-pcs-new-zealand-keychain-souvenir-gifts"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107324+00:00",
+        "updated_at": "2026-03-12T07:11:31.107325+00:00"
+      }
+    },
+    {
+      "id": "jewelry/new-zealand-flag-style-keychain-backpack-pendant-key-ring",
+      "slug": "new-zealand-flag-style-keychain-backpack-pendant-key-ring",
+      "title": "New Zealand Flag Style Keychain Backpack Pendant Key Ring",
+      "category": "jewelry",
+      "amazon_url": "https://www.amazon.com/Zealand-Keychain-Backpack-Decoration-Souvenir/dp/B09JJYQ815?&linkCode=ll2&tag=nzgiftfinder-20&linkId=dd52a75cd5f22fdaf4e0234b6bfd260f&language=en_US&ref_=as_li_ss_tl",
+      "site_url": "/jewelry/new-zealand-flag-style-keychain-backpack-pendant-key-ring.html",
+      "page_path": "jewelry/new-zealand-flag-style-keychain-backpack-pendant-key-ring.html",
+      "catalog_path": "jewelry/products.json",
+      "image": "https://m.media-amazon.com/images/I/5131sCdK+BL._AC_SL1000_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "jewelry/new-zealand-flag-style-keychain-backpack-pendant-key-ring",
+        "amazon_url": "https://www.amazon.com/Zealand-Keychain-Backpack-Decoration-Souvenir/dp/B09JJYQ815?&linkCode=ll2&tag=nzgiftfinder-20&linkId=dd52a75cd5f22fdaf4e0234b6bfd260f&language=en_US&ref_=as_li_ss_tl",
+        "site_url": "/jewelry/new-zealand-flag-style-keychain-backpack-pendant-key-ring.html",
+        "slug": "new-zealand-flag-style-keychain-backpack-pendant-key-ring"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107328+00:00",
+        "updated_at": "2026-03-12T07:11:31.107329+00:00"
+      }
+    },
+    {
+      "id": "jewelry/nz-jade-heart-necklace",
+      "slug": "nz-jade-heart-necklace",
+      "title": "NZ Jade Heart Necklace",
+      "category": "jewelry",
+      "amazon_url": "https://amzn.to/4ujDlkq",
+      "site_url": "/jewelry/nz-jade-heart-necklace.html",
+      "page_path": "jewelry/nz-jade-heart-necklace.html",
+      "catalog_path": "jewelry/products.json",
+      "image": "https://m.media-amazon.com/images/I/71C494ccTSL._AC_SY695_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "jewelry/nz-jade-heart-necklace",
+        "amazon_url": "https://amzn.to/4ujDlkq",
+        "site_url": "/jewelry/nz-jade-heart-necklace.html",
+        "slug": "nz-jade-heart-necklace"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107332+00:00",
+        "updated_at": "2026-03-12T07:11:31.107336+00:00"
+      }
+    },
+    {
+      "id": "jewelry/jade-pikorua-pendant",
+      "slug": "jade-pikorua-pendant",
+      "title": "Jade Pikorua Pendant",
+      "category": "jewelry",
+      "amazon_url": "https://www.amazon.com/dp/B08HLZCBP2?ref=cm_sw_r_cso_cp_apin_dp_RN28FF7BWG306G7ZPMCE&tag=nzgiftfinder-20",
+      "site_url": "/jewelry/jade-pikorua-pendant.html",
+      "page_path": "jewelry/jade-pikorua-pendant.html",
+      "catalog_path": "jewelry/products.json",
+      "image": "https://m.media-amazon.com/images/I/81nSNu6IsEL._AC_SY695_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "jewelry/jade-pikorua-pendant",
+        "amazon_url": "https://www.amazon.com/dp/B08HLZCBP2?ref=cm_sw_r_cso_cp_apin_dp_RN28FF7BWG306G7ZPMCE&tag=nzgiftfinder-20",
+        "site_url": "/jewelry/jade-pikorua-pendant.html",
+        "slug": "jade-pikorua-pendant"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107339+00:00",
+        "updated_at": "2026-03-12T07:11:31.107340+00:00"
+      }
+    },
+    {
+      "id": "jewelry/jade-dangling-earrings",
+      "slug": "jade-dangling-earrings",
+      "title": "Jade Dangling Earrings",
+      "category": "jewelry",
+      "amazon_url": "https://amzn.to/3NwEBjg",
+      "site_url": "/jewelry/jade-dangling-earrings.html",
+      "page_path": "jewelry/jade-dangling-earrings.html",
+      "catalog_path": "jewelry/products.json",
+      "image": "https://m.media-amazon.com/images/I/61lArnLNrqL._AC_SY695_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "jewelry/jade-dangling-earrings",
+        "amazon_url": "https://amzn.to/3NwEBjg",
+        "site_url": "/jewelry/jade-dangling-earrings.html",
+        "slug": "jade-dangling-earrings"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107344+00:00",
+        "updated_at": "2026-03-12T07:11:31.107345+00:00"
+      }
+    },
+    {
+      "id": "skincare/antipodes-aura-m-nuka-honey-mask",
+      "slug": "antipodes-aura-m-nuka-honey-mask",
+      "title": "Antipodes Aura Mānuka Honey Mask",
+      "category": "skincare",
+      "amazon_url": "https://amzn.to/3PpzkLj",
+      "site_url": "/skincare/antipodes-aura-m-nuka-honey-mask.html",
+      "page_path": "skincare/antipodes-aura-m-nuka-honey-mask.html",
+      "catalog_path": "skincare/products.json",
+      "image": "https://m.media-amazon.com/images/I/51bd4oU5yCL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "skincare/antipodes-aura-m-nuka-honey-mask",
+        "amazon_url": "https://amzn.to/3PpzkLj",
+        "site_url": "/skincare/antipodes-aura-m-nuka-honey-mask.html",
+        "slug": "antipodes-aura-m-nuka-honey-mask"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107348+00:00",
+        "updated_at": "2026-03-12T07:11:31.107349+00:00"
+      }
+    },
+    {
+      "id": "skincare/antipodes-glow-vitamin-c-serum-30ml",
+      "slug": "antipodes-glow-vitamin-c-serum-30ml",
+      "title": "Antipodes Glow Vitamin C Serum 30ml",
+      "category": "skincare",
+      "amazon_url": "https://amzn.to/4bxHqu0",
+      "site_url": "/skincare/antipodes-glow-vitamin-c-serum-30ml.html",
+      "page_path": "skincare/antipodes-glow-vitamin-c-serum-30ml.html",
+      "catalog_path": "skincare/products.json",
+      "image": "https://m.media-amazon.com/images/I/61xm0CfDO2L._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "skincare/antipodes-glow-vitamin-c-serum-30ml",
+        "amazon_url": "https://amzn.to/4bxHqu0",
+        "site_url": "/skincare/antipodes-glow-vitamin-c-serum-30ml.html",
+        "slug": "antipodes-glow-vitamin-c-serum-30ml"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107352+00:00",
+        "updated_at": "2026-03-12T07:11:31.107353+00:00"
+      }
+    },
+    {
+      "id": "skincare/eco-by-sonya-driver-glory-oil-100ml",
+      "slug": "eco-by-sonya-driver-glory-oil-100ml",
+      "title": "Eco by Sonya Driver Glory Oil 100ml",
+      "category": "skincare",
+      "amazon_url": "https://amzn.to/4rBg3VP",
+      "site_url": "/skincare/eco-by-sonya-driver-glory-oil-100ml.html",
+      "page_path": "skincare/eco-by-sonya-driver-glory-oil-100ml.html",
+      "catalog_path": "skincare/products.json",
+      "image": "https://m.media-amazon.com/images/I/51-elfeVkrL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "skincare/eco-by-sonya-driver-glory-oil-100ml",
+        "amazon_url": "https://amzn.to/4rBg3VP",
+        "site_url": "/skincare/eco-by-sonya-driver-glory-oil-100ml.html",
+        "slug": "eco-by-sonya-driver-glory-oil-100ml"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107359+00:00",
+        "updated_at": "2026-03-12T07:11:31.107360+00:00"
+      }
+    },
+    {
+      "id": "skincare/cosmetic-bag",
+      "slug": "cosmetic-bag",
+      "title": "New Zealand Cosmetic Bag",
+      "category": "skincare",
+      "amazon_url": "https://amzn.to/4q3CpOK",
+      "site_url": "/skincare/cosmetic-bag.html",
+      "page_path": "skincare/cosmetic-bag.html",
+      "catalog_path": "skincare/products.json",
+      "image": "https://m.media-amazon.com/images/I/71CMsjMx2NL._AC_SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "skincare/cosmetic-bag",
+        "amazon_url": "https://amzn.to/4q3CpOK",
+        "site_url": "/skincare/cosmetic-bag.html",
+        "slug": "cosmetic-bag"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107366+00:00",
+        "updated_at": "2026-03-12T07:11:31.107367+00:00"
+      }
+    },
+    {
+      "id": "skincare/eco-super-citrus-cleanser",
+      "slug": "eco-super-citrus-cleanser",
+      "title": "Eco Super Citrus Cleanser",
+      "category": "skincare",
+      "amazon_url": "https://amzn.to/4pwj0op",
+      "site_url": "/skincare/eco-super-citrus-cleanser.html",
+      "page_path": "skincare/eco-super-citrus-cleanser.html",
+      "catalog_path": "skincare/products.json",
+      "image": "https://m.media-amazon.com/images/I/51azzCAqFKL._SL1500_.jpg",
+      "status": "live",
+      "archived": false,
+      "restored": false,
+      "last_checked": null,
+      "last_seen_in_stock": null,
+      "last_posted": null,
+      "archive_reason": null,
+      "archive_notes": null,
+      "archive_history": [],
+      "restore_history": [],
+      "post_history": [],
+      "check_history": [],
+      "dedupe": {
+        "stable_product_id": "skincare/eco-super-citrus-cleanser",
+        "amazon_url": "https://amzn.to/4pwj0op",
+        "site_url": "/skincare/eco-super-citrus-cleanser.html",
+        "slug": "eco-super-citrus-cleanser"
+      },
+      "copy_qa": {
+        "last_checked": null,
+        "status": "unknown",
+        "notes": []
+      },
+      "source": {
+        "import_method": "existing_repo_inventory",
+        "discovered_at": null,
+        "imported_at": null
+      },
+      "timestamps": {
+        "created_at": "2026-03-12T07:11:31.107370+00:00",
+        "updated_at": "2026-03-12T07:11:31.107371+00:00"
+      }
+    }
+  ],
+  "stats": {
+    "total_products": 31,
+    "live": 31,
+    "archived": 0,
+    "restored": 0
+  },
+  "rules": {
+    "archive_policy": "conservative",
+    "restore_policy": "preserve archived record and reactivate page metadata when confirmed in stock",
+    "dedupe_key": "stable_product_id"
+  }
+}
