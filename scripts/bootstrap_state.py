@@ -10,6 +10,7 @@ DATA_DIR = ROOT / "data"
 SITE_MAP_PATH = DATA_DIR / "site_map.json"
 STATE_PATH = DATA_DIR / "product_state.json"
 POST_QUEUE_PATH = DATA_DIR / "post_queue.json"
+PROPOSAL_QUEUE_PATH = DATA_DIR / "proposal_queue.json"
 RECHECK_QUEUE_PATH = DATA_DIR / "recheck_queue.json"
 RUN_LOGS_DIR = DATA_DIR / "run_logs"
 
@@ -117,6 +118,28 @@ def main() -> None:
         "items": [],
     }
 
+    proposal_queue = {
+        "generated_at": now_iso(),
+        "schema_version": 1,
+        "items": [],
+        "stats": {
+            "pending": 0,
+            "approved": 0,
+            "rejected": 0,
+            "archived": 0,
+            "imported": 0,
+        },
+        "search_queries": [
+            "new zealand gift",
+            "kiwi gift",
+            "new zealand honey gift",
+            "new zealand chocolate gift",
+            "new zealand book",
+            "greenstone necklace new zealand",
+        ],
+        "run_history": [],
+    }
+
     recheck_queue = {
         "generated_at": now_iso(),
         "schema_version": 1,
@@ -126,6 +149,7 @@ def main() -> None:
     RUN_LOGS_DIR.mkdir(parents=True, exist_ok=True)
     write_json(STATE_PATH, state)
     write_json(POST_QUEUE_PATH, post_queue)
+    write_json(PROPOSAL_QUEUE_PATH, proposal_queue)
     write_json(RECHECK_QUEUE_PATH, recheck_queue)
     print(f"Wrote {STATE_PATH.relative_to(ROOT)} with {len(inventory)} inventory records.")
 
