@@ -6,3 +6,10 @@ __pycache__/
 .env.local
 venv/
 .venv/
+
+# Private automation/state files
+X_POSTING.md
+data/site_map.json
+data/product_state.json
+data/post_queue.json
+data/recheck_queue.json
