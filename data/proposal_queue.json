@@ -1,10 +1,284 @@
 {
-  "generated_at": "2026-03-13T00:00:00+00:00",
+  "generated_at": "2026-03-14T03:59:32.577417+00:00",
   "schema_version": 1,
-  "items": [],
+  "items": [
+    {
+      "id": "proposal/B0DJRH76R5",
+      "asin": "B0DJRH76R5",
+      "amazon_url": "https://www.amazon.com/Native-World-Possum-Merino-Travel/dp/B0DJRH76R5?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=6433dc257e6dec8ee4d5a02089c25734&language=en_US&ref_=as_li_ss_tl",
+      "canonical_url": "https://www.amazon.com/dp/B0DJRH76R5",
+      "title": "Native World Possum Merino Wool Travel Scarf",
+      "category_guess": "clothing",
+      "image": "",
+      "bullets": [],
+      "proposal_status": "approved",
+      "inventory_status": "in_stock",
+      "search_query": "manual curation",
+      "review_notes": "Approved by human. Good candidate; preferred premium wool/possum-merino wearable.",
+      "review_history": [
+        {
+          "timestamp": "2026-03-14T03:59:32.577417+00:00",
+          "status": "approved",
+          "reason": "human_approved_good_image_in_stock_associates_eligible"
+        }
+      ],
+      "source": {
+        "type": "manual_review",
+        "discovered_at": "2026-03-14T03:59:32.577417+00:00",
+        "last_seen_at": "2026-03-14T03:59:32.577417+00:00"
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T03:59:32.577417+00:00",
+        "updated_at": "2026-03-14T03:59:32.577417+00:00",
+        "proposed_at": "2026-03-14T03:59:32.577417+00:00",
+        "approved_at": "2026-03-14T03:59:32.577417+00:00",
+        "rejected_at": null,
+        "archived_at": null,
+        "imported_at": null
+      },
+      "dedupe": {
+        "canonical_url": "https://www.amazon.com/dp/B0DJRH76R5",
+        "asin": "B0DJRH76R5"
+      }
+    },
+    {
+      "id": "proposal/B07H1WSK7Y",
+      "asin": "B07H1WSK7Y",
+      "amazon_url": "https://www.amazon.com/Native-World-Womens-Possum-Extremely/dp/B07H1WSK7Y?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=0cd7235f4541d3e8dbaaaf0b23ab45b7&language=en_US&ref_=as_li_ss_tl",
+      "canonical_url": "https://www.amazon.com/dp/B07H1WSK7Y",
+      "title": "Native World Possum Merino Wool Gloves",
+      "category_guess": "clothing",
+      "image": "",
+      "bullets": [],
+      "proposal_status": "approved",
+      "inventory_status": "in_stock",
+      "search_query": "manual curation",
+      "review_notes": "Approved by human. Good candidate; quality image and giftable winter accessory.",
+      "review_history": [
+        {
+          "timestamp": "2026-03-14T03:59:32.577417+00:00",
+          "status": "approved",
+          "reason": "human_approved_good_image_in_stock_associates_eligible"
+        }
+      ],
+      "source": {
+        "type": "manual_review",
+        "discovered_at": "2026-03-14T03:59:32.577417+00:00",
+        "last_seen_at": "2026-03-14T03:59:32.577417+00:00"
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T03:59:32.577417+00:00",
+        "updated_at": "2026-03-14T03:59:32.577417+00:00",
+        "proposed_at": "2026-03-14T03:59:32.577417+00:00",
+        "approved_at": "2026-03-14T03:59:32.577417+00:00",
+        "rejected_at": null,
+        "archived_at": null,
+        "imported_at": null
+      },
+      "dedupe": {
+        "canonical_url": "https://www.amazon.com/dp/B07H1WSK7Y",
+        "asin": "B07H1WSK7Y"
+      }
+    },
+    {
+      "id": "proposal/B00AB50LOE",
+      "asin": "B00AB50LOE",
+      "amazon_url": "https://www.amazon.com/Zealand-Brushtail-Possum-Sleeve-Sweater/dp/B00AB50LOE?th=1&psc=1",
+      "canonical_url": "https://www.amazon.com/dp/B00AB50LOE",
+      "title": "McDonald Textiles Short Zip Rib Sleeve Sweater",
+      "category_guess": "clothing",
+      "image": "",
+      "bullets": [],
+      "proposal_status": "approved",
+      "inventory_status": "in_stock",
+      "search_query": "manual curation",
+      "review_notes": "Approved by human. Premium wearable; use for future page import when Amazon fetch cooperates.",
+      "review_history": [
+        {
+          "timestamp": "2026-03-14T03:59:32.577417+00:00",
+          "status": "approved",
+          "reason": "human_approved_good_image_in_stock"
+        }
+      ],
+      "source": {
+        "type": "manual_review",
+        "discovered_at": "2026-03-14T03:59:32.577417+00:00",
+        "last_seen_at": "2026-03-14T03:59:32.577417+00:00"
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T03:59:32.577417+00:00",
+        "updated_at": "2026-03-14T03:59:32.577417+00:00",
+        "proposed_at": "2026-03-14T03:59:32.577417+00:00",
+        "approved_at": "2026-03-14T03:59:32.577417+00:00",
+        "rejected_at": null,
+        "archived_at": null,
+        "imported_at": null
+      },
+      "dedupe": {
+        "canonical_url": "https://www.amazon.com/dp/B00AB50LOE",
+        "asin": "B00AB50LOE"
+      }
+    },
+    {
+      "id": "proposal/0868672505",
+      "asin": "0868672505",
+      "amazon_url": "https://www.amazon.com/New-Zealand-Beautiful-Cookbook-Flower/dp/0868672505?&linkCode=ll2&tag=nzgiftfinder-20&linkId=bd4cc4283bbeeb48e345d331cf66084b&language=en_US&ref_=as_li_ss_tl",
+      "canonical_url": "https://www.amazon.com/dp/0868672505",
+      "title": "New Zealand the Beautiful Cookbook",
+      "category_guess": "books",
+      "image": "",
+      "bullets": [],
+      "proposal_status": "approved",
+      "inventory_status": "in_stock",
+      "search_query": "manual curation",
+      "review_notes": "Approved by human. Strong coffee-table/gift book candidate.",
+      "review_history": [
+        {
+          "timestamp": "2026-03-14T03:59:32.577417+00:00",
+          "status": "approved",
+          "reason": "human_approved_good_image_in_stock_associates_eligible"
+        }
+      ],
+      "source": {
+        "type": "manual_review",
+        "discovered_at": "2026-03-14T03:59:32.577417+00:00",
+        "last_seen_at": "2026-03-14T03:59:32.577417+00:00"
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T03:59:32.577417+00:00",
+        "updated_at": "2026-03-14T03:59:32.577417+00:00",
+        "proposed_at": "2026-03-14T03:59:32.577417+00:00",
+        "approved_at": "2026-03-14T03:59:32.577417+00:00",
+        "rejected_at": null,
+        "archived_at": null,
+        "imported_at": null
+      },
+      "dedupe": {
+        "canonical_url": "https://www.amazon.com/dp/0868672505",
+        "asin": "0868672505"
+      }
+    },
+    {
+      "id": "proposal/B009W8GDNE",
+      "asin": "B009W8GDNE",
+      "amazon_url": "https://www.amazon.com/Zealand-Brushtail-Possum-Gloves-Unisex/dp/B009W8GDNE?th=1&psc=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=91fe1209efa29b4cb24213617cd3ef26&language=en_US&ref_=as_li_ss_tl",
+      "canonical_url": "https://www.amazon.com/dp/B009W8GDNE",
+      "title": "McDonald Textiles Possum Blend Gloves",
+      "category_guess": "clothing",
+      "image": "",
+      "bullets": [],
+      "proposal_status": "approved",
+      "inventory_status": "in_stock",
+      "search_query": "manual curation",
+      "review_notes": "Approved by human. Good winter accessory candidate.",
+      "review_history": [
+        {
+          "timestamp": "2026-03-14T03:59:32.577417+00:00",
+          "status": "approved",
+          "reason": "human_approved_good_image_in_stock_associates_eligible"
+        }
+      ],
+      "source": {
+        "type": "manual_review",
+        "discovered_at": "2026-03-14T03:59:32.577417+00:00",
+        "last_seen_at": "2026-03-14T03:59:32.577417+00:00"
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T03:59:32.577417+00:00",
+        "updated_at": "2026-03-14T03:59:32.577417+00:00",
+        "proposed_at": "2026-03-14T03:59:32.577417+00:00",
+        "approved_at": "2026-03-14T03:59:32.577417+00:00",
+        "rejected_at": null,
+        "archived_at": null,
+        "imported_at": null
+      },
+      "dedupe": {
+        "canonical_url": "https://www.amazon.com/dp/B009W8GDNE",
+        "asin": "B009W8GDNE"
+      }
+    },
+    {
+      "id": "proposal/B09RGJY54D",
+      "asin": "B09RGJY54D",
+      "amazon_url": "https://www.amazon.com/MANUKA-DOCTOR-Monofloral-Certified-Guaranteed/dp/B09RGJY54D?th=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=fc63f304aaa35a3d2d1e8148269e1be4&language=en_US&ref_=as_li_ss_tl",
+      "canonical_url": "https://www.amazon.com/dp/B09RGJY54D",
+      "title": "Manuka Doctor MGO 925+ Monofloral Mānuka Honey",
+      "category_guess": "food",
+      "image": "",
+      "bullets": [],
+      "proposal_status": "approved",
+      "inventory_status": "in_stock",
+      "search_query": "manual curation",
+      "review_notes": "Approved by human. Premium honey candidate.",
+      "review_history": [
+        {
+          "timestamp": "2026-03-14T03:59:32.577417+00:00",
+          "status": "approved",
+          "reason": "human_approved_good_image_in_stock_associates_eligible"
+        }
+      ],
+      "source": {
+        "type": "manual_review",
+        "discovered_at": "2026-03-14T03:59:32.577417+00:00",
+        "last_seen_at": "2026-03-14T03:59:32.577417+00:00"
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T03:59:32.577417+00:00",
+        "updated_at": "2026-03-14T03:59:32.577417+00:00",
+        "proposed_at": "2026-03-14T03:59:32.577417+00:00",
+        "approved_at": "2026-03-14T03:59:32.577417+00:00",
+        "rejected_at": null,
+        "archived_at": null,
+        "imported_at": null
+      },
+      "dedupe": {
+        "canonical_url": "https://www.amazon.com/dp/B09RGJY54D",
+        "asin": "B09RGJY54D"
+      }
+    },
+    {
+      "id": "proposal/B08JRN9BRB",
+      "asin": "B08JRN9BRB",
+      "amazon_url": "https://www.amazon.com/whitepeak-Genuine-Possumdown-Blended-Zealand/dp/B08JRN9BRB?th=1&psc=1&linkCode=ll2&tag=nzgiftfinder-20&linkId=c4a9793d663c0e73e188cf16773b8cfc&language=en_US&ref_=as_li_ss_tl",
+      "canonical_url": "https://www.amazon.com/dp/B08JRN9BRB",
+      "title": "whitepeak Merino Wool + Possumdown Socks",
+      "category_guess": "clothing",
+      "image": "",
+      "bullets": [],
+      "proposal_status": "approved",
+      "inventory_status": "in_stock",
+      "search_query": "manual curation",
+      "review_notes": "Approved by human. Warm giftable wearable with decent image set.",
+      "review_history": [
+        {
+          "timestamp": "2026-03-14T03:59:32.577417+00:00",
+          "status": "approved",
+          "reason": "human_approved_good_image_in_stock_associates_eligible"
+        }
+      ],
+      "source": {
+        "type": "manual_review",
+        "discovered_at": "2026-03-14T03:59:32.577417+00:00",
+        "last_seen_at": "2026-03-14T03:59:32.577417+00:00"
+      },
+      "timestamps": {
+        "created_at": "2026-03-14T03:59:32.577417+00:00",
+        "updated_at": "2026-03-14T03:59:32.577417+00:00",
+        "proposed_at": "2026-03-14T03:59:32.577417+00:00",
+        "approved_at": "2026-03-14T03:59:32.577417+00:00",
+        "rejected_at": null,
+        "archived_at": null,
+        "imported_at": null
+      },
+      "dedupe": {
+        "canonical_url": "https://www.amazon.com/dp/B08JRN9BRB",
+        "asin": "B08JRN9BRB"
+      }
+    }
+  ],
   "stats": {
     "pending": 0,
-    "approved": 0,
+    "approved": 7,
     "rejected": 0,
     "archived": 0,
     "imported": 0
